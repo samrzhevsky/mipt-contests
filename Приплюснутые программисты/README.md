@@ -302,7 +302,7 @@ int cmp(Triangle a, Triangle b)|сравнивает треугольник a с
 
 ---
 
-# equal-Difference of arrays
+# equal-Arrays are equal?
 
 ## Равны ли массивы?
 Напишите функцию, которая проверяет, равны ли 2 массива: **arrays_are_equal**(<массив 1>, <массив 2>, <размер>)
