@@ -559,6 +559,111 @@ class Line {
 
 ---
 
+# 1rect
+
+## Rect.move
+Прямоугольник задан координатами двух противоположных углов.
+Направление движение задано направлением по x и y.
+Напечатать координаты противоположных углов прямоугольника после сдвига.
+
+```java
+class Coord {
+    public int x;
+    public int y;
+    // методы класса
+}
+
+class Direction {
+    public int dx;
+    public int dy;
+    // методы класса
+}
+
+class Rect {
+    public Coord lt; // left top point
+    public Coord rb; // right bottom point
+    // методы класса
+}
+```
+
+Написать методы классов Coord и Direction.
+Написать методы класса Rect:
+Функция|Что делает
+---|---
+Rect(Scanner s)|считывает и задает координаты левой верхней и правой нижней точки прямоугольника, возвращает прямоугольник
+void move(Direction dir)|перемещает прямоугольник в заданном направлении.
+
+```java
+class Main {
+    public static void main(String args[]) {
+        Rect.main(args);
+    }
+}
+
+class Coord {
+    public int x;
+    public int y;
+    // здесь нужно написать методы
+}
+
+class Direction {
+    public int dx;
+    public int dy;
+
+    Direction(Scanner s) {
+        dx = s.nextInt();
+        dy = s.nextInt();
+    }
+}
+
+class Rect {
+    public Coord lt; // left top point
+    public Coord rb; // right bottom point
+
+    Rect(Scanner s) {
+        // здесь нужно написать код
+    }
+
+    void print() {
+        // здесь нужно написать код
+    }
+
+    void move(Direction d) {
+        // здесь нужно написать код
+    }
+
+    public static void main(String args[]) {
+        Scanner s = new Scanner(System.in);
+        // Получить прямоугольник r и направление d
+        Rect r = new Rect(s);
+        Direction d = new Direction(s);
+
+        // подвинуть прямоугольник
+        r.move(d);
+
+        // напечатать подвинутый прямоугольник
+        r.print();
+    }
+}
+```
+
+Написать и отладить программу.
+
+## Входные данные
+Координаты левой верхней и правой нижней точки прямоугольника, направление сдвига по x и по y.
+
+## Выходные данные
+Координаты левой верхней и правой нижней точки прямоугольника после сдвига.
+
+## Примеры
+Вход|Выход
+---|---
+0 3 4 0 1 1|1 4 5 1
+
+## [Решение](1rect.java)
+
+---
+
 # Задача B
 Напишите статический класс summator с публичными целыми членами A,B,Sum и функцией public int calculate();
 Функция calculate вычисляет сумму.
